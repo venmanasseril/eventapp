@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1><b>Updating Profile:</b></h1>
+<form action="{% url 'edit' %}" method="post">
+{% csrf_token %}
+        <br> Username:<input type="text" name="username"></br>
+        <br>Email_id: <input type="text" name="email" ></br>
+        <br>Password:<input type="text" name="password" ></br>
+        <br> first_name:<input type="text" name="username"></br>
+        <br> last_name:<input type="text" name="username"></br>
+              <br><input type="submit" value="update"></br>
+</form>
+
+</body>
+</html>
